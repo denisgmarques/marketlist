@@ -1,0 +1,25 @@
+{
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "relationshipName": "items",
+      "otherEntityName": "itemList",
+      "otherEntityRelationshipName": "marketList"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20170301041019",
+  "entityTableName": "market_list",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl"
+}

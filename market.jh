@@ -1,0 +1,17 @@
+entity MarketList {
+    name String,
+    createdDate ZonedDateTime
+}
+entity ItemList {
+    description String required minlength(2)
+}
+/* Paginacao com Scroll infinito */
+paginate MarketList, ItemList with infinite-scroll
+/* Paginacao com paginas ex 1,2,3 */
+paginate MarketList, ItemList with pagination
+ 
+relationship OneToMany {
+  MarketList{items} to ItemList{marketList}
+}
+
+service * with serviceImpl

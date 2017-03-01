@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span translate="marketlistApp.itemList.detail.title">Item List</span> {{vm.itemList.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="marketlistApp.itemList.description">Description</span></dt>
+        <dd>
+            <span>{{vm.itemList.description}}</span>
+        </dd>
+        <dt><span translate="marketlistApp.itemList.marketList">Market List</span></dt>
+        <dd>
+            <a ui-sref="market-list-detail({id:vm.itemList.marketList.id})">{{vm.itemList.marketList.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="item-list-detail.edit({id:vm.itemList.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

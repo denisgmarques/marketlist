@@ -1,0 +1,24 @@
+{
+    "marketlistApp": {
+        "marketList" : {
+            "home": {
+                "title": "MarketLists",
+                "createLabel": "Create a new Market List",
+                "createOrEditLabel": "Create or edit a Market List",
+                "search": "Search for Market List"
+            },
+            "created": "A new Market List is created with identifier {{ param }}",
+            "updated": "A Market List is updated with identifier {{ param }}",
+            "deleted": "A Market List is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Market List {{ id }}?"
+            },
+            "detail": {
+                "title": "Market List"
+            },
+            "name": "Name",
+            "createdDate": "Created Date",
+            "items": "Items"
+        }
+    }
+}
